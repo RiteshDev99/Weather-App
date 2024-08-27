@@ -49,7 +49,7 @@ const Main = () => {
 
     return (
         <div className="h-[100vh] w-[100%] bg-slate-700 flex items-center justify-center">
-            <div className="h-auto w-[30vw] bg-[#93c5fd] rounded-md py-3">
+            <div className=" h-auto w-[30vw] bg-[#93c5fd] rounded-md py-3">
                 <div className="flex justify-center">
                     <div className="h-[5vh] w-[27vw] bg-[#f0fdfa] rounded-3xl flex items-center justify-center">
                         <input
@@ -58,7 +58,7 @@ const Main = () => {
                             ref={inputRef}
                             className="h-[5vh] w-[25vw] bg-[#f0fdfa] rounded-3xl p-3 cursor-pointer outline-none font-semibold uppercase"
                         />
-                        <IoSearch onClick={fetchWeather} className="text-3xl text-[#115e59] m-5" />
+                        <IoSearch onClick={fetchWeather} className="text-3xl text-[#115e59] m-5 hover:text-green-400 cursor-pointer" />
                     </div>
                 </div>
                 {showWeather && apiData && (
